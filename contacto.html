@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hubballi&display=swap" rel="stylesheet">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <link rel="icon" type="image/ico" href="./image/logo.png" sizes="64x64">
+
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="">
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="top">
+                <img src="./image/logo.png" class="logo">
+
+                <div class="div_redes">
+                    <a class="linkedin" href="https://www.linkedin.com" >
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a class="facebook" href="https://www.facebook.com">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a  class="instagram" href="https://www.instagram.com">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a class="twitter" href="https://www.twitter.com">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <h1>Portfolio de Daniel López Guerrero</h1>
+            
+        </header>
+
+        <nav>
+            <a href="inicio.html">Inicio</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="sobre_nosotros.html">Sobre Nosotros</a>
+            <a href="contacto.html">Información de Contacto</a>
+        </nav>
+
+        <div class="info">
+            <div class="container1">
+                <h2>Escuela Técnica Superior de Ingeniería</h2>
+                <div id="map"></div>
+            </div>
+            <div class="container2">
+            <h2>Contacto</h2>
+                <form class="formcontacto" onsubmit="alert('Enviado correctamente');return false" action="#">
+
+                    <label>Nombre*</label>
+                    <input class="incontacto" type="text" placeholder="Nombre" required>
+                    <label>Apellidos*</label>
+                    <input class="incontacto" type="text" placeholder="Apellido1 Apellido2" required>
+                    <label>Email*</label>
+                    <input class="incontacto" type="email" placeholder="algo@gmail.com" required>
+                    <label>Asunto</label>
+                    <input class="incontacto" type="text" placeholder="Este es mi asunto">
+
+                    <label>Mensaje*</label>
+                    <textarea rows="10" cols="30" placeholder="Escribe el mensaje aquí..." required> </textarea>
+
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+
+        <footer>@Copyright Página hecha por Daniel López</footer>
+
+        
+
+        <script>
+
+            var map = L.map('map').setView([39.51265252792922,-0.42464258873474964], 13);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            L.marker([39.51265252792922,-0.42464258873474964]).addTo(map)
+                .bindPopup('ETSE Universidad de Valencia')
+                .openPopup();
+
+        </script>
+    </body>
+</html>

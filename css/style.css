@@ -1,0 +1,333 @@
+body
+{
+    margin: 0;
+    font-family: 'Hubballi', cursive;
+    background-color: #d3c7ab;
+}
+.top
+{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+h1
+{
+    text-align: center;
+    color:#fdffff;
+    font-weight: bold;
+}
+.logo
+{
+    width: 50px;
+    height: 50px;
+    left: 0px;
+    
+}
+.div_redes
+{ 
+    position: absolute;
+    right: 4px;
+}
+.div_redes a 
+{
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    padding: 12px;
+}
+
+.div_redes a:hover
+{
+    transform: scale(1.15,1.15);
+}
+
+.facebook {
+    background: #3B5998;
+    color: white;
+    width: 25px;
+}
+
+.twitter {
+background: #55ACEE;
+color: white;
+}
+
+.google {
+background: #dd4b39;
+color: white;
+}
+
+.linkedin {
+background: #007bb5;
+color: white;
+}
+
+.youtube {
+background: #bb0000;
+color: white;
+}
+
+.instagram {
+background: #f40083;
+color: white;
+}
+
+nav
+{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: #61A0AF;
+}
+
+nav a
+{
+    font-size: 20px;
+    text-decoration: none;
+    color:#FDFFFF;
+    padding: 20px;
+    font-weight: bold;
+}
+nav a:hover
+{
+    background-color: #00A0AF;
+}
+header
+{
+    width: 100%;
+    height: 150px;
+    background-color: #50514f;
+}
+footer
+{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #50514f;
+    color:#FDFFFF;
+    position: fixed;
+    bottom: 0px;
+    z-index: 90;
+}
+
+
+
+/* 
+
+Inicio
+
+*/
+.img_inicio
+{
+    width: 100%;
+    height: calc(100vh - 150px - 50px - 20px);
+    animation: transicion 5s;
+
+}
+
+@keyframes transicion
+{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+
+}
+
+/* 
+
+Sobre nosotros
+
+*/
+.nosotros
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 50px;
+
+}
+.contacto1
+{
+    border: 2px solid black;
+    background-color: #ededed;
+    height: 500px;
+    width: 700px;
+    border-radius: 30px;
+    margin: 0px 20px;
+    padding: 40px 30px 0px 30px;
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 10px 10px 15px #355a63;
+    transition: background-color 2s ease, color 2s ease, border 2s ease, box-shadow 2s ease;
+}
+.contacto1:hover
+{
+    background-color: #355a63;
+    color: white;
+    border: 2px solid purple;
+    box-shadow: none;
+}
+
+
+
+/* 
+
+Contacto
+
+ */
+
+#map 
+{ 
+    height: 500px; 
+    z-index: 1;
+}
+
+.info
+{
+    display: flex;
+    width: 100%;
+    height: calc(100% - 150px - 59px - 50px);;
+}
+.container1
+{
+    flex:60%;
+    border: 2px solid black;
+    text-align: center;
+}
+.container2
+{
+    flex:40%;
+    border: 2px solid black;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ededed;
+    color:#EA526F;
+}
+
+.formcontacto
+{
+    display:flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.incontacto
+{
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 300px;
+    height: 30px;
+    margin: 10px 0px;
+    box-shadow: 5px 5px 5px black;
+}
+textarea
+{
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 300px;
+    height: 150px;
+    margin: 10px 0px;
+    box-shadow: 5px 5px 5px black;
+}
+textarea:invalid
+{
+    border-color: red;
+}
+label
+{
+    font-size: 20px;
+}
+.incontacto:invalid
+{
+    border-color: red;
+}
+h2
+{
+    font-size: 30px;
+
+}
+
+input[type=submit]
+{
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: #61a0af;
+    color: white;
+    font-weight: bold;
+    padding: 7;
+    font-size: 14;
+}
+
+/* 
+
+Proyectos
+
+*/
+.temaproyecto
+{
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    margin: 30px 0;
+    border-bottom: 2px solid black;
+}
+.temaproyecto:hover
+{
+    font-weight: bold;
+}
+
+
+.titproyecto
+{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin: 5px 0;
+    background-color: rgb(95, 95, 95);
+    opacity: 0.8;
+    transition: all 0.5s ease-in-out ;
+}
+
+.titproyecto:hover
+{
+    opacity:1;
+
+}
+video
+{
+    margin: 25px 0px;
+}
+.containervideo
+{
+    flex:60%;
+    border-right: 1px solid black;
+    text-align: center;
+    overflow: auto;
+    padding: 0px 25px;
+
+    font-size: 20;
+    
+}
+
+.containerproy
+{
+    flex:40%;
+    border: 2px solid black;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ededed;
+    color:#EA526F;
+    overflow: auto;
+}
+
+.containervideo p
+{
+    word-wrap: break-word;
+    margin: 55px;
+}
+video
+{
+    border-radius: 20px;
+    border: 20px solid black;
+    width: 750px;
+}
